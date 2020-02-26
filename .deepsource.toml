@@ -1,0 +1,18 @@
+version = 1
+
+test_patterns = [
+  "testcase/**",
+  "testcases/**"
+]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/wallarm/gotestwaf"
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
